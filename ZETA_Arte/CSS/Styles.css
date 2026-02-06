@@ -22,10 +22,24 @@
     padding: 20px;
 }
 
-.header_left {
-    height: 90px;
+.logo {
+    height: 40px;
     width: auto;
+}
+
+.header_left {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header_left1 {
     font-size: 25px;
+    color: #1A1A1A;
+}
+
+.header_left2 {
+    font-size: 25px;
+    color: #5D3FD3;
 }
 
 .header_right_list {
