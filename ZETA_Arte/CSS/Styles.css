@@ -13,3 +13,33 @@
     font-weight: 3001;
     font-style: normal;
 }
+
+.header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.header_left {
+    height: 90px;
+    width: auto;
+    font-size: 25px;
+}
+
+.header_right_list {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.header_right_list_link {
+    text-decoration: none;
+    color: #1A1A1A;
+
+}
+
+.header_right_list_link:hover {
+    text-decoration: underline;
+}
