@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/Reset.css">
-    <link rel="stylesheet" href="./CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/Reset.css">
+    <link rel="stylesheet" href="../CSS/StylesComunes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -16,23 +16,65 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
+
   
     <section id="contacto" class="seccion-contacto">
-            <h2>Contacto</h2>
-            <form action="https://formspree.io/f/mjggyzla" method="POST">
-                <label>Nombre:</label>
-                <input type="text" name="nombre" required placeholder="Tu nombre...">
+    <div class="container-contacto">
+        
+        <div class="info-col">
+            <h2>Hablemos de <span class="texto-morado">tu arte</span></h2>
+            <p class="intro-text">¿Tienes preguntas? ¿Quieres unirte a nuestra comunidad? Estamos aquí para ayudarte a dar el siguiente paso en tu carrera artística.</p>
+            
+            <div class="datos-contacto">
+                <div class="dato-item">
+                    <h3>Email</h3>
+                    <p>info@zetaarte.com</p>
+                    <p>soporte@zetaarte.com</p>
+                </div>
+
+                <div class="dato-item">
+                    <h3>Teléfono</h3>
+                    <p>+34 987 654 321</p>
+                    <p class="subtexto">Lun - Vie, 9:00 - 18:00</p>
+                </div>
+
+                <div class="dato-item">
+                    <h3>Ubicación</h3>
+                    <p>Zaragoza, España</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-col">
+            <form action="#" method="POST">
                 
-                <label>Email:</label>
-                <input type="email" name="email" required placeholder="Tu correo...">
+                <div class="campo">
+                    <label>Nombre completo</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="tu@email.com" required>
+                </div>
                 
-                <label>Mensaje:</label>
-                <textarea name="mensaje" rows="5"></textarea>
+                <div class="campo">
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" placeholder="Escribe el asunto..." required>
+                </div>
+
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                </div>
                 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
             </form>
-        </section>
+        </div>
+
+    </div>
+</section>
     </main>
 
 
