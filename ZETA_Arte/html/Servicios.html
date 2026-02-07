@@ -27,7 +27,7 @@
                 </h1>
             </a>
 
-      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
 
             <label for="menu-toggle" class="menu-button">
                 <span></span>
@@ -37,8 +37,8 @@
 
             <nav class="header_right" aria-label="Navegación principal">
                 <ul class="header_right_list">
-                    <li><a class="header_right_list_link is-active" href="Inicio.html">Inicio</a></li>
-                    <li><a class="header_right_list_link" href="Servicios.html">Servicios</a></li>
+                    <li><a class="header_right_list_link" href="Inicio.html">Inicio</a></li>
+                    <li><a class="header_right_list_link is-active" href="Servicios.html">Servicios</a></li>
                     <li><a class="header_right_list_link" href="Precios.html">Precio</a></li>
                     <li><a class="header_right_list_link" href="Contacto.html">Contacto</a></li>
                 </ul>
@@ -46,50 +46,261 @@
         </div>
 
     </header>
-    <main>
-        <section class="services_section">
-            <div class="services_section_content services_section_center">
 
-                <h2 class="services_section_title">
-                    Todo lo que necesitas para <span class="services_accent">brillar</span>
-                </h2>
+    <body class="body fade-in">
 
-                <p class="services_section_subtitle">
-                    ZETA Arte es más que una galería, es un ecosistema completo para impulsar tu carrera artística
-                </p>
 
-                <div class="services_feature_grid">
-                    <article class="services_feature_card">
-                        <div class="icon_box icon_purple"></div>
-                        <h3 class="services_feature_title">Exposición Digital</h3>
-                        <p class="services_feature_text">Plataforma profesional para exhibir tus obras ante una
-                            audiencia global
-                            de coleccionistas y amantes del arte.</p>
-                    </article>
+        <h1>Galería de arte</h1>
+        <p>Descubre nuestra selección de obras únicas y exclusivas de nuestros artistas emergentes.
+            Aquí encontrarás piezas únicas que reflejan la creatividad y el talento de nuestra
+            comunidad artística.
 
-                    <article class="services_feature_card">
-                        <div class="icon_box icon_lime"></div>
-                        <h3 class="services_feature_title">Comunidad Activa</h3>
-                        <p class="services_feature_text">Conecta con otros artistas emergentes, comparte experiencias y
-                            crece
-                            junto a una comunidad apasionada.</p>
-                    </article>
+        <section class="gallery">
 
-                    <article class="services_feature_card">
-                        <div class="icon_box icon_purple"></div>
-                        <h3 class="services_feature_title">Vende tu Arte</h3>
-                        <p class="services_feature_text">Sistema de venta integrado que facilita la transacción directa
-                            entre
-                            artistas y compradores de manera segura.</p>
-                    </article>
 
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.XAM0qbFvch2cEBIhnaxjqAHaF8?w=242&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                <div class="content">
+                    <div class="title">Colores del Alma</div>
+                    <div class="author">Por María González</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">$450 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.5kBa77XWNOOkiqaYxKx4qgHaHh?w=193&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=32">
+                <div class="content">
+                    <div class="title">A trote</div>
+                    <div class="author">Por Carlos Ramírez</div>
+                    <div class="size">50×30×40 cm</div>
+                    <div class="price-row">
+                        <div class="price">$890 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.y-zBPCiTO-shOI4MuSDG-wHaE-?pid=ImgDet&w=184&h=123&c=7&dpr=1,3&o=7&rm=32">
+                <div class="content">
+                    <div class="title">Acuarelas del Atardecer</div>
+                    <div class="author">Por Ana López</div>
+                    <div class="size">60×80 cm</div>
+                    <div class="price-row">
+                        <div class="price">$320 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.l17rwdKodeXhpgGqfwunsAAAAA?pid=ImgDet&w=184&h=184&c=7&dpr=1,3&o=7&rm=32">
+                <div class="content">
+                    <div class="title">Vistas al Mar</div>
+                    <div class="author">Por Víctor Pérez</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">$837 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.7bLJQAEiBu2jneWtk5ExSQHaHa?w=221&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                <div class="content">
+                    <div class="title">Árbol genealógico</div>
+                    <div class="author">Por María González</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">$521 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img src="https://tse4.mm.bing.net/th/id/OIP.x2tYoPL15crPBnLB8e3ufwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <div class="content">
+                    <div class="title">Cielo caótico</div>
+                    <div class="author">Por Carlos Ramírez</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">$210 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.714JKba08zWgLVJFxR3dZAHaDz?w=348&h=179&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                <div class="content">
+                    <div class="title">Reflejo</div>
+                    <div class="author">Por Ana López</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">$450 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://img.ricardostatic.ch/images/781ecee1-9484-4fc3-a28f-58489aaf5aa5/t_1000x750/ecke-589-5th-ave-new-york-city">
+                <div class="content">
+                    <div class="title">Nueva York
+                        <div class="author">Por Víctor Pérez</div>
+                        <div class="size">80×100 cm</div>
+                        <div class="price-row">
+                            <div class="price">$470 EUR</div>
+                            <button class="cart" aria-label="Añadir al carrito">
+                                🛒
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
         </section>
+        
+                                <h1>Talleres y <span>eventos</span></h1>
+                                <p class="subtitle">
+                                        Desarrolla tus habilidades artísticas con nuestros talleres dirigidos por
+                                        artistas profesionales
+                                </p>
 
-    </main>
+                                <section class="grid">
+
+                                        <!-- TARJETA 1 -->
+                                        <div class="card">
+                                                <div class="image">
+                                                        <img
+                                                                src="https://th.bing.com/th/id/OIP.vof9c1s59Gd7vzvIEWq-yQHaEK?w=319&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                                                        <div class="tag">Principiante</div>
+                                                </div>
+
+                                                <div class="content">
+                                                        <div>
+                                                                <div class="category">PINTURA</div>
+                                                                <div class="title">Pintura Abstracta con Acrílicos</div>
+                                                                <div class="teacher">con María González</div>
+
+                                                                <p class="desc">
+                                                                        Aprende las técnicas fundamentales de la pintura
+                                                                        abstracta.
+                                                                        Exploraremos el uso del color, la composición y
+                                                                        la expresión emocional.
+                                                                </p>
+
+                                                                <div class="info">
+                                                                        <div>📅 15 Mar 2026</div>
+                                                                        <div>🕒 18:00</div>
+                                                                        <div>👥 8/12</div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="price-row">
+                                                                <div class="price">$65 EUR</div>
+                                                                <button class="btn">Reservar</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <!-- TARJETA 2 -->
+                                        <div class="card">
+                                                <div class="image">
+                                                        <img
+                                                                src="https://th.bing.com/th/id/OIP.OMMDLRYa8z8ExhHw4YEU9QHaE8?w=261&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                                                        <div class="tag">Principiante</div>
+                                                </div>
+
+                                                <div class="content">
+                                                        <div>
+                                                                <div class="category">CERÁMICA</div>
+                                                                <div class="title">Cerámica Contemporánea</div>
+                                                                <div class="teacher">con Pedro Sánchez</div>
+
+                                                                <p class="desc">
+                                                                        Descubre el mundo de la cerámica desde cero.
+                                                                        Aprenderás modelado, esmaltado y cocción para
+                                                                        crear piezas únicas.
+                                                                </p>
+
+                                                                <div class="info">
+                                                                        <div>📅 18 Mar 2026</div>
+                                                                        <div>🕒 16:00</div>
+                                                                        <div>👥 10/10</div>
+                                                                </div>
+                                                        </div>
+
+                                                        <div class="price-row">
+                                                                <div class="price">$85 EUR</div>
+                                                                <button class="btn disabled">Completo</button>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                </section>
 
 
-</body>
+
+    </body>
 
 </html>
