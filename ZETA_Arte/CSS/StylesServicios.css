@@ -160,13 +160,6 @@ nav a:hover {
     color: #5a3fd0;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #ececec;
-}
-
-
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
