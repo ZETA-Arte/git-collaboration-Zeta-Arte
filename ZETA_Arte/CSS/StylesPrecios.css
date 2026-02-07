@@ -1,14 +1,14 @@
 /* PRECIOS */ 
 
-/* --- 1. CONFIGURACIÓN GENERAL --- */
+/* --- CONFIGURACIÓN GENERAL --- */
 .seccion-precios {
     padding: 60px 20px;
-    background-color: #F4F4F0; /* Fondo gris muy clarito */
+    background-color: #F4F4F0; 
     font-family: 'Inter', sans-serif;
-    text-align: center;        /* Todo el texto centrado */
+    text-align: center;        
 }
 
-/* --- 2. ENCABEZADO --- */
+/* --- ENCABEZADO --- */
 .header-precios {
     max-width: 600px;
     margin: 0 auto 50px auto;
@@ -22,7 +22,7 @@
     border-radius: 20px;
     font-size: 0.85rem;
     margin-bottom: 15px;
-    background: white;
+    background: #F4F4F0;
 }
 
 .header-precios h2 {
@@ -37,29 +37,29 @@
 .header-precios p { color: #666; font-size: 1rem; }
 
 
-/* --- 3. CONTENEDOR DE TARJETAS (FLEXBOX) --- */
+/* --- CONTENEDOR DE TARJETAS (FLEXBOX) --- */
 .contenedor-tarjetas {
-    display: flex;             /* Pone las tarjetas en fila */
-    justify-content: center;   /* Las centra */
-    gap: 30px;                 /* Espacio entre ellas */
+    display: flex;             
+    justify-content: center;   
+    gap: 30px;                 
     max-width: 1200px;
     margin: 0 auto 40px auto;
     align-items: stretch;   
     flex-wrap: wrap;           
 }
 
-/* --- 4. DISEÑO DE CADA TARJETA --- */
+/* --- DISEÑO DE CADA TARJETA --- */
 .card {
     background: white;
     padding: 40px 30px;
-    border-radius: 20px;       /* Bordes muy redondeados */
-    border: 1px solid #e0e0e0; /* Borde fino gris por defecto */
-    flex: 1;                   /* Ocupan el mismo ancho */
+    border-radius: 20px;       
+    border: 1px solid #e0e0e0; 
+    flex: 1;                   
     min-width: 300px;
-    position: relative;        /* Necesario para la etiqueta flotante */
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05); /* Sombra suave */
+    position: relative;        
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
     display: flex;
-    flex-direction: column;    /* Para empujar el botón al final */
+    flex-direction: column;    
 }
 
 /* Títulos y Precios */
@@ -81,13 +81,13 @@
 .precio .mes { font-size: 1rem; color: #888; font-weight: normal; }
 
 
-/* --- 5. LISTA DE CARACTERÍSTICAS (CHECKS) --- */
+/* ---LISTA DE CARACTERÍSTICAS (CHECKS) --- */
 .lista-features {
-    list-style: none; /* Quita los puntos negros feos */
+    list-style: none; 
     padding: 0;
     margin-bottom: 40px;
-    text-align: left; /* Alinea texto a la izquierda */
-    flex-grow: 1;     /* Empuja el botón hacia abajo */
+    text-align: left; 
+    flex-grow: 1;     
 }
 
 .lista-features li {
@@ -106,8 +106,8 @@
     align-items: center;
     width: 24px;
     height: 24px;
-    border-radius: 6px; /* Cuadradito redondeado */
-    color: white;       /* El tick blanco */
+    border-radius: 6px; 
+    color: white;       
     font-size: 14px;
     flex-shrink: 0;
 }
@@ -115,21 +115,21 @@
 /* Colores de los checks */
 .check.gris   { background-color: #ccc; }
 .check.morado { background-color: #5D3FD3; }
-.check.lima   { background-color: #cddc39; color: black; } /* Lima con tick negro */
+.check.lima   { background-color: #cddc39; color: #1A1A1A; } 
 
 
-/* --- 6. TARJETA DESTACADA ("POPULAR") --- */
+/* --- TARJETA DESTACADA ("POPULAR") --- */
 .card.popular {
-    border: 2px solid #5D3FD3; /* Borde Morado */
-    transform: scale(1.05);    /* Un pelín más grande */
-    z-index: 2;                /* Por encima de las otras */
+    border: 2px solid #5D3FD3; 
+    transform: scale(1.05);   
+    z-index: 2;                
 }
 
 .etiqueta-popular {
     position: absolute;
-    top: -15px;            /* Sube la etiqueta fuera de la tarjeta */
+    top: -15px;            
     left: 50%;
-    transform: translateX(-50%); /* Centrado perfecto */
+    transform: translateX(-50%); 
     background-color: #5D3FD3;
     color: white;
     padding: 5px 20px;
@@ -140,11 +140,11 @@
 }
 
 
-/* --- 7. BOTONES --- */
+/* --- BOTONES --- */
 .btn-plan {
     display: block;
     padding: 18px;
-    border-radius: 50px; /* Muy redondo (Pill shape) */
+    border-radius: 50px; 
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.2s;
@@ -157,9 +157,6 @@
 .btn-plan.morado { background-color: #5D3FD3; color: white; }
 .btn-plan.lima   { background-color: #cddc39; color: #1a1a1a; }
 
-/* Pie */
-.footer-nota { color: #777; font-size: 0.9rem; }
-.footer-nota a { color: #5D3FD3; font-weight: bold; text-decoration: none; }
 
 /* Móvil */
 @media (max-width: 900px) {
