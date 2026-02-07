@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../CSS/StylesComunes.css">
     <link rel="stylesheet" href="../CSS/Reset.css">
-    
+    <link rel="stylesheet" href="../CSS/StylesComunes.css">
+    <link rel="stylesheet" href="../CSS/StylesPrecios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -18,14 +18,35 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header_content">
+            <a class="header_left" href="Inicio.html" aria-label="Ir al inicio">
+                <img class="logo" src="../Imagenes/Logo.png" alt="Logo ZETA Arte" />
+                <h1 class="brand">
+                    <span class="brand_black">ZETA</span><span class="brand_purple">Arte</span>
+                </h1>
+            </a>
 
-    <section class="seccion-precios">
-    
-    <div class="header-precios">
-        <span class="etiqueta-top">Planes y Precios</span>
-        <h2>Elige tu <span class="texto-morado">plan perfecto</span></h2>
-        <p>Sin compromisos. Cancela cuando quieras. Todos los planes incluyen 14 días de prueba gratis.</p>
-    </div>
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="header_right" aria-label="Navegación principal">
+                <ul class="header_right_list">
+                    <li><a class="header_right_list_link" href="Inicio.html">Inicio</a></li>
+                    <li><a class="header_right_list_link" href="Servicios.html">Servicios</a></li>
+                    <li><a class="header_right_list_link is-active" href="Precios.html">Precio</a></li>
+                    <li><a class="header_right_list_link" href="Contacto.html">Contacto</a></li>
+                    <li><a class="header_right_list_link" href="Resenas.html">Reseñas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
 
     <div class="contenedor-tarjetas">
 
