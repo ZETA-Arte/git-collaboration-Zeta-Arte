@@ -1,0 +1,171 @@
+/*FONTS*/
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 3001;
+    font-style: normal;
+}
+
+.body {
+    background-color: #F4F4F0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/*HEADER*/
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #F4F4F0;
+    border-bottom: 2px solid #1A1A1A;
+    z-index: 1000;
+    padding: 0px;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    gap: 16px;
+}
+
+/*HEADER LOGO Y MARCA*/
+
+.logo {
+    height: auto;
+    width: 44px;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.brand {
+    font-size: 26px;
+    margin: 0;
+}
+
+.brand_black {
+    color: #1A1A1A;
+}
+
+.brand_purple {
+    color: #5D3FD3;
+}
+
+
+
+/*HEADER - MENU INICIO*/
+.header_right {}
+
+.header_right_list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.header_right_list_link {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #1A1A1A;
+    font-weight: 500;
+}
+
+.header_right_list_link:hover {
+    background: #CCFF00;
+    color: #1A1A1A;
+}
+
+.header_right_list_link:active {
+    background: #5D3FD3;
+    color: #FFFFFF;
+}
+
+.header_right_list_link.is-active {
+    background: #5D3FD3;
+    color: #FFFFFF;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+/* HAMBURGUESA */
+.menu-button {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #1A1A1A;
+    border-radius: 3px;
+}
+
+/*MOVIL*/
+
+@media (min-width: 768px) {
+    .hero_wrap {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    /*Menu Hamburguesa*/
+
+    @media (max-width: 768px) {
+
+        .header_content {
+            flex-wrap: wrap;
+        }
+
+        .menu-button {
+            display: flex;
+        }
+
+        .header_right {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            flex-basis: 100%;
+        }
+
+        .header_right_list {
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            background-color: #F4F4F0;
+            border-top: 1px solid #ddd;
+            gap: 20px;
+        }
+
+        .menu-checkbox:checked~.header_right {
+            max-height: 300px;
+        }
+    }

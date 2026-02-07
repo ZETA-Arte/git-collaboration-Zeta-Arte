@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/Reset.css">
+    <link rel="stylesheet" href="../CSS/StylesComunes.css">
     <link rel="stylesheet" href="../CSS/StylesInicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body class="body">
+<body class="body fade_in">
     <header class="header">
         <div class="header_content">
             <a class="header_left" href="Inicio.html" aria-label="Ir al inicio">
@@ -25,6 +26,14 @@
                     <span class="brand_black">ZETA</span><span class="brand_purple">Arte</span>
                 </h1>
             </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
             <nav class="header_right" aria-label="Navegación principal">
                 <ul class="header_right_list">
