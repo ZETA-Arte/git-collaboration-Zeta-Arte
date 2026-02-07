@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header class="header">
+      <header class="header">
         <div class="header_content">
             <a class="header_left" href="Inicio.html" aria-label="Ir al inicio">
                 <img class="logo" src="../Imagenes/Logo.png" alt="Logo ZETA Arte" />
@@ -46,6 +46,22 @@
         </div>
 
     </header>
+    <section id="contacto" class="seccion-contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/mjggyzla" method="POST">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" required placeholder="Tu nombre...">
+                
+                <label>Email:</label>
+                <input type="email" name="email" required placeholder="Tu correo...">
+                
+                <label>Mensaje:</label>
+                <textarea name="mensaje" rows="5"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
 
 
 </body>
