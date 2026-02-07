@@ -175,15 +175,15 @@
 
 .footer {
     background-color: #1A1A1A; 
-    color: #F4F4F0;            /* Texto blanco */
-    padding: 40px 0;        /* Espacio arriba y abajo */
+    color: #F4F4F0;            
+    padding: 40px 0;        
     font-family: "Playfair Display", serif;
 }
 
 .container {
-    max-width: 1200px;      /* Ancho máximo para que no se estire infinito */
-    margin: 0 auto;         /* Centrar el contenido */
-    padding: 0 20px;        /* Un poco de margen a los lados */
+    max-width: 1200px;      
+    margin: 0 auto;         
+    padding: 0 20px;        
 }
 
 /* --- Columnas (FLEXBOX) --- */
@@ -191,7 +191,7 @@
     display: flex;              
     justify-content: space-between; 
     gap: 20px;                  
-    flex-wrap: wrap;            /* 4. Permite que bajen si no caben (importante para móvil) */
+    flex-wrap: wrap;            
 }
 
 .footer-col {
