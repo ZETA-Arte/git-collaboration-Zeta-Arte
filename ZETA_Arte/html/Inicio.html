@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/Reset.css">
-    <link rel="stylesheet" href="../CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/StylesComunes.css">
+    <link rel="stylesheet" href="../CSS/StylesInicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -16,8 +17,93 @@
         rel="stylesheet">
 </head>
 
+<body class="body fade_in">
+    <header class="header">
+        <div class="header_content">
+            <a class="header_left" href="Inicio.html" aria-label="Ir al inicio">
+                <img class="logo" src="../Imagenes/Logo.png" alt="Logo ZETA Arte" />
+                <h1 class="brand">
+                    <span class="brand_black">ZETA</span><span class="brand_purple">Arte</span>
+                </h1>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="header_right" aria-label="Navegación principal">
+                <ul class="header_right_list">
+                    <li><a class="header_right_list_link is-active" href="Inicio.html">Inicio</a></li>
+                    <li><a class="header_right_list_link" href="Servicios.html">Servicios</a></li>
+                    <li><a class="header_right_list_link" href="Precios.html">Precio</a></li>
+                    <li><a class="header_right_list_link" href="Contacto.html">Contacto</a></li>
+                    <li><a class="header_right_list_link" href="Resenas.html">Reseñas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero_content">
+
+                <section class="hero_text">
+                    <h2 class="hero_title">
+                        Arte sin <span class="hero_accent">fronteras</span>
+                    </h2>
+
+                    <p class="hero_desc">
+                        Descubre, conecta y adquiere obras únicas de artistas emergentes. Un espacio donde la
+                        creatividad se encuentra con la oportunidad.
+                    </p>
+
+                    <div class="hero_actions">
+                        <a class="btn btn_purple" href="Servicios.html">Explorar Galería</a>
+                        <a class="btn btn_lime" href="Servicios.html">Conocer Artistas</a>
+                    </div>
+
+                    <ul class="stats" aria-label="Estadísticas">
+                        <li><span class="stat_num">500+</span><span class="stat_label">Obras</span></li>
+                        <li><span class="stat_num">150+</span><span class="stat_label">Artistas</span></li>
+                        <li><span class="stat_num">25+</span><span class="stat_label">Talleres</span></li>
+                    </ul>
+                </section>
+
+                <section class="hero_images" aria-label="Imágenes destacadas">
+                    <div class="hero_collage">
+                        <figure class="hero_frame">
+                            <img src="../Imagenes/hero_img1.jpg" alt="Obra abstracta" />
+
+                        </figure>
+
+                        <figure class="hero_frame hero_frame_lime">
+                            <img src="../Imagenes/hero_img2.jpg" alt="Oceano rosa y sol" />
+
+                        </figure>
+
+                        <figure class="hero_frame hero_frame_purple">
+                            <img src="../Imagenes/hero_img3.jpg" alt="Escultura en exterior" />
+
+                        </figure>
+
+                        <figure class="hero_frame">
+                            <img src="../Imagenes/hero_img4.jpg" alt="Exposición en galería" />
+
+                        </figure>
+                    </div>
+                </section>
 
 
+            </div>
+            </div>
+        </section>
+    </main>
 
+</body>
 
 </html>
