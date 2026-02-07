@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/Reset.css">
-    <link rel="stylesheet" href="./CSS/Styles.css">
+    <link rel="stylesheet" href="../CSS/Reset.css">
+    <link rel="stylesheet" href="../CSS/StylesComunes.css">
+    <link rel="stylesheet" href="../CSS/StylesPrecios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -17,8 +18,97 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header_content">
+            <a class="header_left" href="Inicio.html" aria-label="Ir al inicio">
+                <img class="logo" src="../Imagenes/Logo.png" alt="Logo ZETA Arte" />
+                <h1 class="brand">
+                    <span class="brand_black">ZETA</span><span class="brand_purple">Arte</span>
+                </h1>
+            </a>
 
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
 
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="header_right" aria-label="Navegación principal">
+                <ul class="header_right_list">
+                    <li><a class="header_right_list_link" href="Inicio.html">Inicio</a></li>
+                    <li><a class="header_right_list_link" href="Servicios.html">Servicios</a></li>
+                    <li><a class="header_right_list_link is-active" href="Precios.html">Precio</a></li>
+                    <li><a class="header_right_list_link" href="Contacto.html">Contacto</a></li>
+                    <li><a class="header_right_list_link" href="Resenas.html">Reseñas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="contenedor-tarjetas">
+
+        <div class="card">
+            <h3>Artista Libre</h3>
+            <p class="desc">Perfecto para empezar tu viaje artístico</p>
+            <div class="precio">€0 <span class="mes">/Gratis</span></div>
+            
+            <ul class="lista-features">
+                <li><span class="check gris">✔</span> Hasta 10 obras en galería</li>
+                <li><span class="check gris">✔</span> Perfil de artista básico</li>
+                <li><span class="check gris">✔</span> Comisión del 20% por venta</li>
+                <li><span class="check gris">✔</span> Soporte por email</li>
+                <li><span class="check gris">✔</span> Acceso a comunidad</li>
+            </ul>
+
+            <a href="#" class="btn-plan negro">Empezar Gratis</a>
+        </div>
+
+        <div class="card popular">
+            <div class="etiqueta-popular">☆ Más Popular</div>
+            <h3>Artista Pro</h3>
+            <p class="desc">Para artistas que buscan crecer</p>
+            <div class="precio">€29 <span class="mes">/mes</span></div>
+            
+            <ul class="lista-features">
+                <li><span class="check morado">✔</span> Obras ilimitadas en galería</li>
+                <li><span class="check morado">✔</span> Perfil destacado</li>
+                <li><span class="check morado">✔</span> Comisión del 15% por venta</li>
+                <li><span class="check morado">✔</span> Soporte prioritario</li>
+                <li><span class="check morado">✔</span> Estadísticas avanzadas</li>
+                <li><span class="check morado">✔</span> 1 taller gratis al mes</li>
+                <li><span class="check morado">✔</span> Promoción en redes sociales</li>
+            </ul>
+
+            <a href="#" class="btn-plan morado">Probar 14 Días Gratis</a>
+        </div>
+
+        <div class="card">
+            <h3>Colectivo</h3>
+            <p class="desc">Ideal para grupos y colectivos</p>
+            <div class="precio">€99 <span class="mes">/mes</span></div>
+            
+            <ul class="lista-features">
+                <li><span class="check lima">✔</span> Hasta 5 artistas</li>
+                <li><span class="check lima">✔</span> Galería colectiva</li>
+                <li><span class="check lima">✔</span> Comisión del 12% por venta</li>
+                <li><span class="check lima">✔</span> Soporte 24/7</li>
+                <li><span class="check lima">✔</span> Página personalizada</li>
+                <li><span class="check lima">✔</span> Talleres ilimitados</li>
+                <li><span class="check lima">✔</span> Eventos exclusivos</li>
+                <li><span class="check lima">✔</span> Marketing dedicado</li>
+            </ul>
+
+            <a href="#" class="btn-plan lima">Probar 14 Días Gratis</a>
+        </div>
+
+    </div>
+
+    <p class="footer-nota">¿Necesitas un plan personalizado? <a href="#">Contáctanos</a></p>
+
+</section>
 
 </body>
 
