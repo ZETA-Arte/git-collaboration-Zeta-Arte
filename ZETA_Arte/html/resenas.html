@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZETA Arte</title>
+    <title>Zeta Arte</title>
     <link rel="stylesheet" href="../CSS/Reset.css">
     <link rel="stylesheet" href="../CSS/StylesComunes.css">
-    <link rel="stylesheet" href="../CSS/StylesInicio.css">
+    <link rel="stylesheet" href="../CSS/stylesresenas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
@@ -37,80 +37,89 @@
 
             <nav class="header_right" aria-label="Navegación principal">
                 <ul class="header_right_list">
-                    <li><a class="header_right_list_link is-active" href="Inicio.html">Inicio</a></li>
+                    <li><a class="header_right_list_link" href="Inicio.html">Inicio</a></li>
                     <li><a class="header_right_list_link" href="Servicios.html">Servicios</a></li>
                     <li><a class="header_right_list_link" href="Precios.html">Precio</a></li>
                     <li><a class="header_right_list_link" href="Contacto.html">Contacto</a></li>
-                    <li><a class="header_right_list_link" href="Resenas.html">Reseñas</a></li>
+                    <li><a class="header_right_list_link is-active" href="Resenas.html">Reseñas</a></li>
                 </ul>
             </nav>
         </div>
 
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero_content">
+    <h1>Opiniones de clientes</h1>
+    <p class="parrafo">Experiencias reales de personas que han participado en nuestros talleres y eventos</p>
 
-                <section class="hero_text">
-                    <h2 class="hero_title">
-                        Arte sin <span class="hero_accent">fronteras</span>
-                    </h2>
+    <section class="section">
 
-                    <p class="hero_desc">
-                        Descubre, conecta y adquiere obras únicas de artistas emergentes. Un espacio donde la
-                        creatividad se encuentra con la oportunidad.
-                    </p>
+        <div class="grid">
 
-                    <div class="hero_actions">
-                        <a class="btn btn_purple" href="Servicios.html">Explorar Galería</a>
-                        <a class="btn btn_lime" href="Servicios.html">Conocer Artistas</a>
+            <div class="card">
+                <div class="quote">”</div>
+                <div class="stars">★★★★★</div>
+
+                <p class="text parrafo">
+                    ZETA Arte cambió completamente mi carrera.
+                    En 3 meses vendí más obras que en todo el año anterior.
+                    La plataforma es intuitiva y el equipo siempre está dispuesto a ayudar.
+                </p>
+
+                <div class="user">
+                    <div>
+                        <div class="name">Elena Vega</div>
+                        <div class="role">Artista Digital</div>
                     </div>
+                </div>
+            </div>
 
-                    <ul class="stats" aria-label="Estadísticas">
-                        <li><span class="stat_num">500+</span><span class="stat_label">Obras</span></li>
-                        <li><span class="stat_num">150+</span><span class="stat_label">Artistas</span></li>
-                        <li><span class="stat_num">25+</span><span class="stat_label">Talleres</span></li>
-                    </ul>
-                </section>
+            <div class="card">
+                <div class="quote">”</div>
+                <div class="stars">★★★★★</div>
 
-                <section class="hero_images" aria-label="Imágenes destacadas">
-                    <div class="hero_collage">
-                        <figure class="hero_frame">
-                            <img src="../Imagenes/hero_img1.jpg" alt="Obra abstracta" />
+                <p class="text parrafo">
+                    Lo mejor es la comunidad. He conocido artistas increíbles
+                    y hemos colaborado en varios proyectos.
+                    Los talleres son de altísima calidad.
+                </p>
 
-                        </figure>
+                <div class="user">
 
-                        <figure class="hero_frame hero_frame_lime">
-                            <img src="../Imagenes/hero_img2.jpg" alt="Oceano rosa y sol" />
-
-                        </figure>
-
-                        <figure class="hero_frame hero_frame_purple">
-                            <img src="../Imagenes/hero_img3.jpg" alt="Escultura en exterior" />
-
-                        </figure>
-
-                        <figure class="hero_frame">
-                            <img src="../Imagenes/hero_img4.jpg" alt="Exposición en galería" />
-
-                        </figure>
+                    <div>
+                        <div class="name">Marcos Silva</div>
+                        <div class="role">Escultor</div>
                     </div>
-                </section>
-
-
+                </div>
             </div>
-            </div>
-        </section>
-    </main>
 
+            <div class="card">
+                <div class="quote">”</div>
+                <div class="stars">★★★★★</div>
+
+                <p class="text parrafo">
+                    Finalmente encontré un espacio donde mi arte es valorado.
+                    Las estadísticas me ayudan a entender qué funciona
+                    y la visibilidad que he ganado es increíble.
+                </p>
+
+                <div class="user">
+
+                    <div>
+                        <div class="name">Carmen Ortiz</div>
+                        <div class="role">Pintora</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 
 <footer class="footer">
     <div class="container">
-        
+
         <div class="footer-columns">
-            
+
             <div class="footer-col">
                 <h3>ZETA <span class="texto-lima">Arte</span></h3>
                 <p>Un espacio para artistas emergentes donde la creatividad se encuentra con la oportunidad.</p>
@@ -139,20 +148,21 @@
                 <h3>Síguenos</h3>
                 <div class="social-links">
                     <a href="#" aria-label="Instagram">
-                <img src="../Imagenes/logotipo-de-instagram.png" alt="Instagram">
-             </a>
+                        <img src="../Imagenes/logotipo-de-instagram.png" alt="Instagram">
+                    </a>
 
-             <a href="#" aria-label="Twitter">
-                <img src="../Imagenes/logotipo-twitter.png" alt="Twitter">
-             </a>
+                    <a href="#" aria-label="Twitter">
+                        <img src="../Imagenes/logotipo-twitter.png" alt="Twitter">
+                    </a>
 
-            <a href="#" aria-label="LinkedIn">
-                <img src="../Imagenes/logotipo-link.png" alt="LinkedIn">
-             </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <img src="../Imagenes/logotipo-link.png" alt="LinkedIn">
+                    </a>
                 </div>
             </div>
 
-        </div> <div class="footer-bottom">
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2026 ZETA Arte. Todos los derechos reservados.</p>
         </div>
 

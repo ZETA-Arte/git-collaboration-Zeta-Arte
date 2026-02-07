@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto - ZETA Arte</title>
     <link rel="stylesheet" href="../CSS/Reset.css">
     <link rel="stylesheet" href="../CSS/StylesComunes.css">
     <link rel="stylesheet" href="../CSS/StylesContacto.css">
@@ -17,8 +17,8 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
+<body class="body">
+      <header class="header">
         <div class="header_content">
             <a class="header_left" href="Inicio.html" aria-label="Ir al inicio">
                 <img class="logo" src="../Imagenes/Logo.png" alt="Logo ZETA Arte" />
@@ -47,8 +47,115 @@
         </div>
 
     </header>
+    <section id="contacto" class="seccion-contacto">
+    <div class="container-contacto">
+        
+        <div class="info-col">
+            <h2>Hablemos de <span class="texto-morado">tu arte</span></h2>
+            <p class="intro-text">¿Tienes preguntas? ¿Quieres unirte a nuestra comunidad? Estamos aquí para ayudarte a dar el siguiente paso en tu carrera artística.</p>
+            
+            <div class="datos-contacto">
+                <div class="dato-item">
+                    <h3>Email</h3>
+                    <p>info@zetaarte.com</p>
+                    <p>soporte@zetaarte.com</p>
+                </div>
 
+                <div class="dato-item">
+                    <h3>Teléfono</h3>
+                    <p>+34 987 654 321</p>
+                    <p class="subtexto">Lun - Vie, 9:00 - 18:00</p>
+                </div>
 
+                <div class="dato-item">
+                    <h3>Ubicación</h3>
+                    <p>Zaragoza, España</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-col">
+            <form action="#" method="POST">
+                
+                <div class="campo">
+                    <label>Nombre completo</label>
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                
+                <div class="campo">
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" placeholder="Escribe el asunto..." required>
+                </div>
+
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" rows="4" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </div>
+</section>
 </body>
+
+<footer class="footer">
+    <div class="container">
+        
+        <div class="footer-columns">
+            
+            <div class="footer-col">
+                <h3>ZETA <span class="texto-lima">Arte</span></h3>
+                <p>Un espacio para artistas emergentes donde la creatividad se encuentra con la oportunidad.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">info@zetaarte.com</a></li>
+                    <li><a href="#">+34 987 654 321</a></li>
+                    <li><a href="#">Zaragoza, España</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                <img src="../Imagenes/logotipo-de-instagram.png" alt="Instagram">
+             </a>
+
+             <a href="#" aria-label="Twitter">
+                <img src="../Imagenes/logotipo-twitter.png" alt="Twitter">
+             </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <img src="../Imagenes/logotipo-link.png" alt="LinkedIn">
+             </a>
+                </div>
+            </div>
+
+        </div> <div class="footer-bottom">
+            <p>&copy; 2026 ZETA Arte. Todos los derechos reservados.</p>
+        </div>
+
+    </div>
+</footer>
 
 </html>

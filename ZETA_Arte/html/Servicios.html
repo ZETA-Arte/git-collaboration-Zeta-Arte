@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - ZETA Arte</title>
+    <link rel="stylesheet" href="../CSS/Reset.css">
+    <link rel="stylesheet" href="../CSS/StylesComunes.css">
+    <link rel="stylesheet" href="../CSS/StylesServicios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+    <body class="body fade-in">
+    <header class="header">
+        <div class="header_content">
+            <a class="header_left" href="Inicio.html" aria-label="Ir al inicio">
+                <img class="logo" src="../Imagenes/Logo.png" alt="Logo ZETA Arte" />
+                <h1 class="brand">
+                    <span class="brand_black">ZETA</span><span class="brand_purple">Arte</span>
+                </h1>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="header_right" aria-label="Navegación principal">
+                <ul class="header_right_list">
+                    <li><a class="header_right_list_link" href="Inicio.html">Inicio</a></li>
+                    <li><a class="header_right_list_link is-active" href="Servicios.html">Servicios</a></li>
+                    <li><a class="header_right_list_link" href="Precios.html">Precio</a></li>
+                    <li><a class="header_right_list_link" href="Contacto.html">Contacto</a></li>
+                    <li><a class="header_right_list_link" href="Resenas.html">Reseñas</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+        <h1>Galería de arte</h1>
+        <p class="parrafo">Descubre nuestra selección de obras únicas y exclusivas de nuestros artistas emergentes.
+            Aquí encontrarás piezas únicas que reflejan la creatividad y el talento de nuestra
+            comunidad artística.
+
+        <section class="gallery">
+
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.XAM0qbFvch2cEBIhnaxjqAHaF8?w=242&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                <div class="content">
+                    <div class="title">Colores del Alma</div>
+                    <div class="author">Por María González</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">450 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.5kBa77XWNOOkiqaYxKx4qgHaHh?w=193&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=32">
+                <div class="content">
+                    <div class="title">A trote</div>
+                    <div class="author">Por Carlos Ramírez</div>
+                    <div class="size">50×30×40 cm</div>
+                    <div class="price-row">
+                        <div class="price">890 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.y-zBPCiTO-shOI4MuSDG-wHaE-?pid=ImgDet&w=184&h=123&c=7&dpr=1,3&o=7&rm=32">
+                <div class="content">
+                    <div class="title">Acuarelas del Atardecer</div>
+                    <div class="author">Por Ana López</div>
+                    <div class="size">60×80 cm</div>
+                    <div class="price-row">
+                        <div class="price">320 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.l17rwdKodeXhpgGqfwunsAAAAA?pid=ImgDet&w=184&h=184&c=7&dpr=1,3&o=7&rm=32">
+                <div class="content">
+                    <div class="title">Vistas al Mar</div>
+                    <div class="author">Por Víctor Pérez</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">837 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.7bLJQAEiBu2jneWtk5ExSQHaHa?w=221&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                <div class="content">
+                    <div class="title">Árbol genealógico</div>
+                    <div class="author">Por María González</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">521 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img src="https://tse4.mm.bing.net/th/id/OIP.x2tYoPL15crPBnLB8e3ufwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+                <div class="content">
+                    <div class="title">Cielo caótico</div>
+                    <div class="author">Por Carlos Ramírez</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">210 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://th.bing.com/th/id/OIP.714JKba08zWgLVJFxR3dZAHaDz?w=348&h=179&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                <div class="content">
+                    <div class="title">Reflejo</div>
+                    <div class="author">Por Ana López</div>
+                    <div class="size">80×100 cm</div>
+                    <div class="price-row">
+                        <div class="price">450 EUR</div>
+                        <button class="cart" aria-label="Añadir al carrito">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="tag">Pintura</span>
+                <button class="heart" onclick="toggleHeart(this)" aria-label="Favorito">
+                    ♡
+                </button>
+                <img
+                    src="https://img.ricardostatic.ch/images/781ecee1-9484-4fc3-a28f-58489aaf5aa5/t_1000x750/ecke-589-5th-ave-new-york-city">
+                <div class="content">
+                    <div class="title">Nueva York
+                        <div class="author">Por Víctor Pérez</div>
+                        <div class="size">80×100 cm</div>
+                        <div class="price-row">
+                            <div class="price">470 EUR</div>
+                            <button class="cart" aria-label="Añadir al carrito">
+                                🛒
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <h1>Talleres y eventos</h1>
+        <p class="parrafo">
+            Desarrolla tus habilidades artísticas con nuestros talleres dirigidos por
+            artistas profesionales
+        </p>
+
+        <section class="grid">
+
+            <!-- TARJETA 1 -->
+            <div class="card">
+                <div class="image">
+                    <img
+                        src="https://th.bing.com/th/id/OIP.-5zrQR0hXbsOe9mK0zXRdgHaE8?w=268&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                    <div class="tag">Principiante</div>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <div class="category">PINTURA</div>
+                        <div class="title">Pintura Abstracta con Acrílicos</div>
+                        <div class="teacher">con María González</div>
+
+                        <p class="desc parrafo">
+                            Aprende las técnicas fundamentales de la pintura
+                            abstracta.
+                            Exploraremos el uso del color, la composición y
+                            la expresión emocional.
+                        </p>
+
+                        <div class="info">
+                            <div>📅 15 Mar 2026</div>
+                            <div>🕒 18:00</div>
+                            <div>👥 8/12</div>
+                        </div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price">65 EUR</div>
+                        <button class="btn">Reservar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="card">
+                <div class="image">
+                    <img
+                        src="https://th.bing.com/th/id/OIP.OMMDLRYa8z8ExhHw4YEU9QHaE8?w=261&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                    <div class="tag">Principiante</div>
+                </div>
+
+                <div class="content">
+                    <div>
+                        <div class="category">CERÁMICA</div>
+                        <div class="title">Cerámica Contemporánea</div>
+                        <div class="teacher">con Pedro Sánchez</div>
+
+                        <p class="desc parrafo">
+                            Descubre el mundo de la cerámica desde cero.
+                            Aprenderás modelado, esmaltado y cocción para
+                            crear piezas únicas.
+                        </p>
+
+                        <div class="info">
+                            <div>📅 18 Mar 2026</div>
+                            <div>🕒 16:00</div>
+                            <div>👥 10/10</div>
+                        </div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price">85 EUR</div>
+                        <button class="btn disabled">Completo</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <h1>Artistas</h1>
+        <p class="parrafo">
+            Descubre a nuestros artistas emergentes
+        </p>
+
+
+        <section class="grid">
+
+            <div class="card">
+                <div class="image">
+                    <img src="https://cdn.pixabay.com/photo/2019/02/18/23/44/profile-4005803_1280.jpg">
+                    <div class="dot"></div>
+                    <div class="overlay">
+                        <h3>María González</h3>
+                        <p class="parrafo">Pintura Abstracta</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="desc parrafo">
+                        Artista autodidacta que explora la conexión entre el color y la emoción.
+                        Su trabajo busca transmitir sensaciones profundas.
+                    </p>
+                    <div class="stats">
+                        <div><span>23</span><br>Obras</div>
+                        <div>Zaragoza, España</div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-main">@maria.art</button>
+                        <button class="btn-icon mail">✉</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img
+                        src="https://th.bing.com/th/id/OIP.k3ytmhDW5S_TUstmPQ0kewHaJ1?w=208&h=275&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+                    <div class="dot"></div>
+                    <div class="overlay">
+                        <h3>Carlos Ramírez</h3>
+                        <p class="parrafo">Escultura Contemporánea</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <p class="desc parrafo">
+                        Escultor que trabaja con materiales reciclados para crear obras que
+                        reflexionan sobre sostenibilidad.
+                    </p>
+                    <div class="stats">
+                        <div><span>15</span><br>Obras</div>
+                        <div>Zaragoza, España</div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-main">@carlos_sculpt</button>
+                        <button class="btn-icon mail">✉</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </body>
+<footer class="footer">
+    <div class="container">
+        
+        <div class="footer-columns">
+            
+            <div class="footer-col">
+                <h3>ZETA <span class="texto-lima">Arte</span></h3>
+                <p>Un espacio para artistas emergentes donde la creatividad se encuentra con la oportunidad.</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Precios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">info@zetaarte.com</a></li>
+                    <li><a href="#">+34 987 654 321</a></li>
+                    <li><a href="#">Zaragoza, España</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                <img src="../Imagenes/logotipo-de-instagram.png" alt="Instagram">
+             </a>
+
+             <a href="#" aria-label="Twitter">
+                <img src="../Imagenes/logotipo-twitter.png" alt="Twitter">
+             </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <img src="../Imagenes/logotipo-link.png" alt="LinkedIn">
+             </a>
+                </div>
+            </div>
+
+        </div> <div class="footer-bottom">
+            <p>&copy; 2026 ZETA Arte. Todos los derechos reservados.</p>
+        </div>
+
+    </div>
+</footer>
+</html>
