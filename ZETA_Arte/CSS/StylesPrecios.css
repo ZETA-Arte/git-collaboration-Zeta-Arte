@@ -1,0 +1,164 @@
+/* PRECIOS */ 
+
+/* --- CONFIGURACIÓN GENERAL --- */
+.seccion-precios {
+    padding: 60px 20px;
+    background-color: #F4F4F0; 
+    font-family: 'Inter', sans-serif;
+    text-align: center;        
+}
+
+/* --- ENCABEZADO --- */
+.header-precios {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+}
+
+.etiqueta-top {
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1px solid #5D3FD3;
+    color: #5D3FD3;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    background: #F4F4F0;
+}
+
+.header-precios h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.texto-morado { color: #5D3FD3; }
+
+.header-precios p { color: #666; font-size: 1rem; }
+
+
+/* --- CONTENEDOR DE TARJETAS (FLEXBOX) --- */
+.contenedor-tarjetas {
+    display: flex;             
+    justify-content: center;   
+    gap: 30px;                 
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    align-items: stretch;   
+    flex-wrap: wrap;           
+}
+
+/* --- DISEÑO DE CADA TARJETA --- */
+.card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;       
+    border: 1px solid #e0e0e0; 
+    flex: 1;                   
+    min-width: 300px;
+    position: relative;        
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
+    display: flex;
+    flex-direction: column;    
+}
+
+/* Títulos y Precios */
+.card h3 { 
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+.desc { color: #666; font-size: 0.9rem; margin-bottom: 25px; min-height: 40px;}
+
+.precio { 
+    font-size: 3.5rem; 
+    font-weight: bold; 
+    color: #1a1a1a; 
+    margin-bottom: 30px; 
+}
+
+.precio .mes { font-size: 1rem; color: #888; font-weight: normal; }
+
+
+/* ---LISTA DE CARACTERÍSTICAS (CHECKS) --- */
+.lista-features {
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 40px;
+    text-align: left; 
+    flex-grow: 1;     
+}
+
+.lista-features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* El cuadradito de color del check */
+.check {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px; 
+    color: white;       
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* Colores de los checks */
+.check.gris   { background-color: #ccc; }
+.check.morado { background-color: #5D3FD3; }
+.check.lima   { background-color: #cddc39; color: #1A1A1A; } 
+
+
+/* --- TARJETA DESTACADA ("POPULAR") --- */
+.card.popular {
+    border: 2px solid #5D3FD3; 
+    transform: scale(1.05);   
+    z-index: 2;                
+}
+
+.etiqueta-popular {
+    position: absolute;
+    top: -15px;            
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: #5D3FD3;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* --- BOTONES --- */
+.btn-plan {
+    display: block;
+    padding: 18px;
+    border-radius: 50px; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+    margin-top: auto;
+}
+
+.btn-plan:hover { transform: scale(1.02); }
+
+.btn-plan.negro  { background-color: #1a1a1a; color: white; }
+.btn-plan.morado { background-color: #5D3FD3; color: white; }
+.btn-plan.lima   { background-color: #cddc39; color: #1a1a1a; }
+
+
+/* Móvil */
+@media (max-width: 900px) {
+    .card.popular { transform: none; margin: 25px 0; }
+}
