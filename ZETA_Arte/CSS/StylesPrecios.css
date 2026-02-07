@@ -3,7 +3,7 @@
 /* --- 1. CONFIGURACIÓN GENERAL --- */
 .seccion-precios {
     padding: 60px 20px;
-    background-color: #f9f9f9; /* Fondo gris muy clarito */
+    background-color: #F4F4F0; /* Fondo gris muy clarito */
     font-family: 'Inter', sans-serif;
     text-align: center;        /* Todo el texto centrado */
 }
@@ -17,8 +17,8 @@
 .etiqueta-top {
     display: inline-block;
     padding: 6px 15px;
-    border: 1px solid #6A5ACD;
-    color: #6A5ACD;
+    border: 1px solid #5D3FD3;
+    color: #5D3FD3;
     border-radius: 20px;
     font-size: 0.85rem;
     margin-bottom: 15px;
@@ -32,7 +32,7 @@
     color: #1a1a1a;
 }
 
-.texto-morado { color: #6A5ACD; }
+.texto-morado { color: #5D3FD3; }
 
 .header-precios p { color: #666; font-size: 1rem; }
 
@@ -44,10 +44,9 @@
     gap: 30px;                 /* Espacio entre ellas */
     max-width: 1200px;
     margin: 0 auto 40px auto;
-    align-items: flex-start;   /* Alinea arriba */
-    flex-wrap: wrap;           /* Para móviles */
+    align-items: stretch;   
+    flex-wrap: wrap;           
 }
-
 
 /* --- 4. DISEÑO DE CADA TARJETA --- */
 .card {
@@ -115,13 +114,13 @@
 
 /* Colores de los checks */
 .check.gris   { background-color: #ccc; }
-.check.morado { background-color: #6A5ACD; }
+.check.morado { background-color: #5D3FD3; }
 .check.lima   { background-color: #cddc39; color: black; } /* Lima con tick negro */
 
 
 /* --- 6. TARJETA DESTACADA ("POPULAR") --- */
 .card.popular {
-    border: 2px solid #6A5ACD; /* Borde Morado */
+    border: 2px solid #5D3FD3; /* Borde Morado */
     transform: scale(1.05);    /* Un pelín más grande */
     z-index: 2;                /* Por encima de las otras */
 }
@@ -131,7 +130,7 @@
     top: -15px;            /* Sube la etiqueta fuera de la tarjeta */
     left: 50%;
     transform: translateX(-50%); /* Centrado perfecto */
-    background-color: #6A5ACD;
+    background-color: #5D3FD3;
     color: white;
     padding: 5px 20px;
     border-radius: 20px;
@@ -149,17 +148,18 @@
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.2s;
+    margin-top: auto;
 }
 
 .btn-plan:hover { transform: scale(1.02); }
 
 .btn-plan.negro  { background-color: #1a1a1a; color: white; }
-.btn-plan.morado { background-color: #6A5ACD; color: white; }
+.btn-plan.morado { background-color: #5D3FD3; color: white; }
 .btn-plan.lima   { background-color: #cddc39; color: #1a1a1a; }
 
 /* Pie */
 .footer-nota { color: #777; font-size: 0.9rem; }
-.footer-nota a { color: #6A5ACD; font-weight: bold; text-decoration: none; }
+.footer-nota a { color: #5D3FD3; font-weight: bold; text-decoration: none; }
 
 /* Móvil */
 @media (max-width: 900px) {
