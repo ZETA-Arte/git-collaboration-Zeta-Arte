@@ -1,6 +1,6 @@
 /*HERO*/
 .fade_in {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     animation: fadePage 1s ease forwards;
 }
@@ -151,6 +151,10 @@
     }
 
     @keyframes fadePage {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
         to {
             opacity: 1;
             transform: translateY(0);
